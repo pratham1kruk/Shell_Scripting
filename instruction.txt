@@ -1,0 +1,15 @@
+note 
+
+RUN make up for the first time during setup for later start use docker compose up
+download docker-compose and make before running setup:
+sudo apt-get update
+sudo apt-get make
+sudo apt-get install docker-compose -y
+
+brevo email is used for email and number verification and required when you forget or reset password\
+setup brevo key and email beforehand in secret.txt
+ 
+use command this command to get read write and execution permission for running the script without error
+
+chmod 700 hrms.sh
+ 
