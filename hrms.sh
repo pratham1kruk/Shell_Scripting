@@ -24,6 +24,7 @@ enable_services() {
     echo "Enabling and starting docker and nginx services..."
     sudo systemctl enable docker
     sudo systemctl start docker
+    sudo usermod -aG docker ubuntu
 
     sudo systemctl enable nginx
     sudo systemctl start nginx
@@ -65,7 +66,7 @@ deploy() {
 
 echo "****************** Deployment started *********************"
 
-code_clone
+gode_clone
 install_requirements
 enable_services
 
